@@ -5,10 +5,12 @@ import * as Utils from "../../scripts/utils.js";
 let width = context.canvas.width;
 let height = context.canvas.height;
 
+Utils.drawBackground(0, 0, width, height);
 drawMaze();
 
 function drawMaze() {
 	context.lineWidth = "4";
+	context.lineCap = "square";
 	for (let j = 0; j < 200; j++)
 		for (let i = 0; i < 200; i++) {
 			context.strokeStyle = Utils.rgb(Math.random() * 255, Math.random() * 255, Math.random() * 255);

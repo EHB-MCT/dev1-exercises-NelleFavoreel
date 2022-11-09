@@ -204,3 +204,10 @@ export function drawLine(x1, y1, x2, y2) {
 	context.lineTo(x2, y2);
 	context.stroke();
 }
+export function drawBackground(x1, y1, x2, y2) {
+	context.lineWidth = 2;
+
+	context.fillStyle = "black";
+
+	context.fillRect(x1, y1, x2, y2);
+}
