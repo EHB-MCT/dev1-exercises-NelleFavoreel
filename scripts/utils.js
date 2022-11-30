@@ -32,7 +32,7 @@ export function fillAndStrokeEllipse(x, y, rX, rY) {
 	context.stroke();
 }
 
-export function strokeBubbles(x1, y1, radius) {
+*/ export function strokeBubbles(x1, y1, radius) {
 	let red = Math.floor(Math.random() * 255);
 	let blue = Math.floor(Math.random() * 255);
 	let green = Math.floor(Math.random() * 255);
@@ -42,7 +42,7 @@ export function strokeBubbles(x1, y1, radius) {
 	context.ellipse(x1, y1, radius, radius, 0, 0, 180);
 	context.fillStyle = color;
 	context.fill();
-}*/
+}
 /** function that formats an hsl value based on parameters
  * @param {number} h the hue in degrees
  * @param {number} s the saturation in percentage
